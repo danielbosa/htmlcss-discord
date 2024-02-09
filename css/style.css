@@ -85,6 +85,21 @@ footer .top{
     text-align: center;
 }
 
+/* .p-abs{
+    position: absolute;
+}
+
+.p-rel{
+    position: relative;
+}
+
+.img-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+
 /* utility flex */
 
 .d-flex{
@@ -102,12 +117,13 @@ footer .top{
 
 .a-center{
     align-items: center;
-    /* align-content: center; */
+    align-content: center;
 }
 
 .a-end{
     align-content: flex-end;
 }
+
 
 /* elements */
 
@@ -155,7 +171,13 @@ a:hover{
     text-decoration: underline;
 }
 
-/* text color */
+/* text */
+
+.txt-center{
+    text-align: center;
+}
+
+/* color */
 
 .prim-color{
     color: var(--color-primary);
