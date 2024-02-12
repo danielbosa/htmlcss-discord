@@ -318,17 +318,21 @@ a:hover:not(.btn){
 /* btn decoration */
 
 .btn.bg-contrast:hover{
-    box-shadow: 0 8px 15px rgba(0,0,0.2);
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
     background-color: #7289da;
+    transition-duration: 0.5s;
 }
 
 .btn.bg-secondary:hover{
     box-shadow: 0 8px 15px rgba(0,0,0,.2);
     background-color: var(--color-secondary);
     color: var(--color-contrast2);
+    transition-duration: 0.5s;
 }
 
 .btn.bg-primary:hover{
     box-shadow: 0 8px 15px rgba(0,0,0,.2);
     background-color: var(--color-hoverbtnprimary);
+    transition-duration: 0.5s;
+
 }
