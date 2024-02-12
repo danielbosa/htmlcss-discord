@@ -21,6 +21,8 @@ img{
 	--color-header-bg: #255ee9;
 	--color-section-bg: #f6f6f6;
 	--color-contrast: #aebbe7;
+    --color-contrast2: #5865f2;
+    --color-hoverbtnprimary: #313338;
 }
 
 body{
@@ -38,7 +40,7 @@ h2{
 }
 
 h3{
-
+    font-size: 22px;
 }
 
 h4{
@@ -102,6 +104,7 @@ header nav ul li{
     background-color: var(--color-section-bg);
 }
 
+
 /* footer */
 
 footer{
@@ -118,6 +121,16 @@ footer .top{
 footer .bottom{
     padding-top: 1rem;
     padding-bottom: 3rem;
+}
+
+.footer-links{
+    font-size: 12px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.length{
+    max-width: 200px;
 }
 
 /* utility */
@@ -140,6 +153,12 @@ footer .bottom{
     text-align: center;
 }
 
+.smaller-container{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .in-block{
     display: inline-block;
 }
@@ -149,6 +168,10 @@ footer .bottom{
 .d-flex{
     display: flex;
     flex-flow: row wrap;
+}
+
+.d-column{
+    flex-flow: column wrap;
 }
 
 .r-rev{
@@ -191,6 +214,20 @@ footer .bottom{
     padding-bottom: 10%;
 }
 
+.pad-b2{
+    padding-bottom: 5%;
+}
+
+/* margin */
+
+.mg-social{
+    margin-top: 24px;
+}
+
+.mg-right{
+    margin-right: 24px;
+}
+
 /* text */
 
 .txt-center{
@@ -211,6 +248,10 @@ footer .bottom{
     color: var(--color-secondary)
 }
 
+.contr-color{
+    color: var(--color-contrast2);
+}
+
 /* background color */
 
 .bg-secondary{
@@ -218,7 +259,7 @@ footer .bottom{
 }
 
 .bg-contrast{
-    background-color: var(--color-contrast);
+    background-color: var(--color-contrast2);
 }
 
 .bg-primary{
@@ -245,6 +286,12 @@ footer .bottom{
     -webkit-transform: rotate(45deg);
 }
 
+.stars{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 /* buttons */
 
@@ -254,17 +301,34 @@ footer .bottom{
     border-radius: 50px;
 }
 
-/*a decoration */
+
+/*decoration */
+
+/* a decoration */
 
 a{
     color: var(--color-secondary);
     text-decoration: none;
 }
 
-a:hover{
+a:hover:not(.btn){
     text-decoration: underline;
 }
 
-.download::before{
-    content: "\2193";
-  }
+/* btn decoration */
+
+.btn.bg-contrast:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0.2);
+    background-color: #7289da;
+}
+
+.btn.bg-secondary:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    background-color: var(--color-secondary);
+    color: var(--color-contrast2);
+}
+
+.btn.bg-primary:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    background-color: var(--color-hoverbtnprimary);
+}
