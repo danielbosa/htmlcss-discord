@@ -104,6 +104,14 @@ header nav ul li{
     background-color: var(--color-section-bg);
 }
 
+.wave{
+    background-image: url(/img/wave.svg);
+    min-height: 2em;
+}
+
+.rotated{
+    transform: rotate(180deg);
+}
 
 /* footer */
 
